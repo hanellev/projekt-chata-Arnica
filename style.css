@@ -284,4 +284,26 @@ nav {
 	}
 
 	/* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+
+	.pricelist__content {
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+		align-items: baseline;
+	}
+
+	.offer {
+		width: 220px;
+	}
+	.review {
+	}
+
+	.review__photo {
+		background-image: url(/images/reviewer.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		width: 300px;
+	}
 }
