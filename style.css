@@ -6,6 +6,12 @@
 	--text: #1f2403;
 }
 
+:root[data-theme='dark'] {
+	--background-primary: #132221;
+	--background-secondary: #476462;
+	--text: #e1e1e1;
+}
+
 /* ZÁKLADNÍ STYLY */
 
 *,
@@ -295,8 +301,9 @@ nav {
 	.offer {
 		width: 220px;
 	}
-	.review {
-	}
+	/* .review {
+		position: absolute;
+	} */
 
 	.review__photo {
 		background-image: url(/images/reviewer.jpg);
@@ -305,5 +312,32 @@ nav {
 		background-position: center;
 		height: 400px;
 		width: 300px;
+	}
+
+	.review__text {
+		position: relative;
+		left: 3rem;
+		background-color: var(--background-secondary);
+		width: 250px;
+	}
+
+	.review__content {
+		border: none;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.pricelist__content {
+		gap: 6rem;
+	}
+	.footer {
+		gap: 6rem;
 	}
 }
